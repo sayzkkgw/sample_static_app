@@ -20,13 +20,13 @@ class UsersController < ApplicationController
     if @user.save
       # Success Process
     else
-      render 'new' #, status: :unprocessable_entity
+      render 'new', status: :unprocessable_entity
     end
   end
 
   private
-    def user_params
-      params.require(:user).permit(:name, :email, :password, :password_confirmation)
-    end
 
+  def user_params
+    params.require(:user).permit(:name, :email, :password, :password_confirmation)
+  end
 end
