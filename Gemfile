@@ -8,13 +8,14 @@ gem 'bootsnap',        '1.16.0'
 gem 'bootstrap-sass',  '3.4.1'
 gem 'importmap-rails', '1.1.5'
 gem 'jbuilder',        '2.11.5'
+gem 'pg'
 gem 'puma',            '5.6.5'
 gem 'rails',           '7.0.4.3'
 gem 'sassc-rails',     '2.1.2'
 gem 'sprockets-rails', '3.4.2'
-gem 'sqlite3',         '1.6.1'
-gem 'stimulus-rails',  '1.2.1'
-gem 'turbo-rails',     '1.4.0'
+gem 'sqlite3', '1.6.1'
+gem 'stimulus-rails', '1.2.1'
+gem 'turbo-rails', '1.4.0'
 
 group :development, :test do
   gem 'debug', '1.7.1', platforms: %i[mri mingw x64_mingw]
